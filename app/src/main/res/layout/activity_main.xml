@@ -2,6 +2,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/drawerLayout"
+    android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -60,6 +61,7 @@
                         android:backgroundTint="@null"
                         android:text="Seguir"
                         android:textAllCaps="false"
+                        android:textStyle="bold"
                         android:textColor="@color/white" />
 
                     <View
@@ -73,6 +75,7 @@
                         android:background="@drawable/bg_button_secondary"
                         android:text="Mensaje"
                         android:textAllCaps="false"
+                        android:textStyle="bold"
                         android:textColor="@color/button_text_secondary" />
 
                 </LinearLayout>
@@ -106,6 +109,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="1.2k"
+                            android:textColor="@color/black"
                             android:textStyle="bold" />
 
                         <TextView
@@ -126,6 +130,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="350"
+                            android:textColor="@color/black"
                             android:textStyle="bold" />
 
                         <TextView
@@ -146,6 +151,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="48"
+                            android:textColor="@color/black"
                             android:textStyle="bold" />
 
                         <TextView

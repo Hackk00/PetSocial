@@ -5,6 +5,7 @@
     <color name="text_secondary">#6B7280</color>
     <color name="background">#F9FAFB</color>
     <color name="white">#FFFFFF</color>
+    <color name="black">#000</color>
     <color name="card">#FFFFFF</color>
     <color name="button_bg_primary">#964300</color> <!-- Naranja -->
     <color name="button_text_secondary">#004884</color>
