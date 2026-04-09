@@ -1,0 +1,10 @@
+<resources>
+    <color name="primary">#964300</color> <!-- Naranja -->
+    <color name="secondary">#B7D3FF</color> <!-- Azul -->
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="background">#F9FAFB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="card">#FFFFFF</color>
+    <color name="button_text_secondary">#004884</color>
+</resources>

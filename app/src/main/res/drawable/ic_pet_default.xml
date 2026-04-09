@@ -1,0 +1,8 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    <path android:fillColor="#FF6B9E" android:pathData="M100,50 Q70,20 40,60 Q30,100 60,130 Q80,160 100,140 Q120,160 140,130 Q170,100 160,60 Q130,20 100,50" />
+    <!-- Puedes agregar orejas, ojos, etc. o simplemente usar una foto PNG -->
+</vector>
