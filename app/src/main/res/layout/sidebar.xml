@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MascotaSocial"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Opciones -->
+    <TextView
+        android:id="@+id/menuInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inicio"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/menuFotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fotos"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/menuVideos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Videos"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/menuPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Perfil"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:textColor="@color/primary"/>
+</LinearLayout>
