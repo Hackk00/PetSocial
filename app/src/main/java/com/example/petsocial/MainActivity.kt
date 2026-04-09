@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
 
         // Header → abre menú lateral
         btnNotificaciones.setOnClickListener {
-            drawerLayout.openDrawer(Gravity.LEFT)
+            Toast.makeText(this, "Abrir notificaciones 🔔", Toast.LENGTH_SHORT).show()
         }
 
         // Menú lateral
@@ -107,7 +107,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnMenu.setOnClickListener {
-            drawerLayout.openDrawer(android.view.Gravity.START)
+            drawerLayout.openDrawer(GravityCompat.START)
         }
     }
 }
