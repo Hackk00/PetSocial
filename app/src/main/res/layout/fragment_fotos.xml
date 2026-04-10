@@ -43,6 +43,150 @@
                 android:textSize="15sp" />
 
         </LinearLayout>
+
+        <!-- Botones -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+
+                <Button
+                    android:id="@+id/btncat0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_button_primary"
+                    android:backgroundTint="@null"
+                    android:text="Todos"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="0dp" />
+
+                <Button
+                    android:id="@+id/btncat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_button_secondary"
+                    android:text="Perros"
+                    android:textAllCaps="false"
+                    android:textColor="@color/button_text_secondary"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="0dp" />
+
+                <Button
+                    android:id="@+id/btncat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_button_secondary"
+                    android:text="Gatos"
+                    android:textAllCaps="false"
+                    android:textColor="@color/button_text_secondary"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="0dp" />
+
+                <Button
+                    android:id="@+id/btncat3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_button_secondary"
+                    android:text="Aves"
+                    android:textAllCaps="false"
+                    android:textColor="@color/button_text_secondary"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="0dp" />
+
+                <Button
+                    android:id="@+id/btncat4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_button_secondary"
+                    android:text="Conejos"
+                    android:textAllCaps="false"
+                    android:textColor="@color/button_text_secondary"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:background="@color/background">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/placeholder" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/placeholder" />
+
+        </LinearLayout>
+
+        <!-- Grid -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:padding="5dp"
+            android:columnCount="2">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:background="@drawable/placeholder" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:background="@drawable/placeholder" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:background="@drawable/placeholder" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="6dp"
+                android:background="@drawable/placeholder" />
+
+        </GridLayout>
         <!-- AQUI TERMINA EL CUERPO DEL CONTENIDO -->
 
     </LinearLayout>
