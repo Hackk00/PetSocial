@@ -1,15 +1,11 @@
 package com.example.petsocial
 
 import android.os.Bundle
-import android.view.Gravity
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.activity.OnBackPressedCallback
-import androidx.core.view.GravityCompat
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,16 +15,14 @@ class MainActivity : AppCompatActivity() {
 
     // Header
     private lateinit var btnNotificaciones: ImageView
-
-    // Drawer
-    private lateinit var drawerLayout: DrawerLayout
-
-    // Menú lateral
-    private lateinit var menuInicio: TextView
-    private lateinit var menuFotos: TextView
-    private lateinit var menuVideos: TextView
-    private lateinit var menuPerfil: TextView
     private lateinit var btnMenu: ImageView
+
+    // Sidebar (ahora son LinearLayout)
+    private lateinit var menuPerfil: LinearLayout
+    private lateinit var menuFotos: LinearLayout
+    private lateinit var menuVideos: LinearLayout
+    private lateinit var menuWeb: LinearLayout
+    private lateinit var menuBotones: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,22 +30,9 @@ class MainActivity : AppCompatActivity() {
 
         initViews()
         setupListeners()
-
-        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {
-                if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-                    drawerLayout.closeDrawer(GravityCompat.START)
-                } else {
-                    finish()
-                }
-            }
-        })
     }
 
     private fun initViews() {
-
-        // Drawer
-        drawerLayout = findViewById(R.id.drawerLayout)
 
         // Botones perfil
         btnSeguir = findViewById(R.id.btnSeguir)
@@ -60,13 +41,12 @@ class MainActivity : AppCompatActivity() {
         // Header
         btnNotificaciones = findViewById(R.id.btnNotificaciones)
 
-        // Sidebar menú
-        menuInicio = findViewById(R.id.menuInicio)
+        // Sidebar
+        menuPerfil = findViewById(R.id.menuPerfil)
         menuFotos = findViewById(R.id.menuFotos)
         menuVideos = findViewById(R.id.menuVideos)
-        menuPerfil = findViewById(R.id.menuPerfil)
-        btnMenu = findViewById(R.id.btnMenu)
-        drawerLayout = findViewById(R.id.drawerLayout)
+        menuWeb = findViewById(R.id.menuWeb)
+//        menuBotones = findViewById(R.id.menuBotones)
     }
 
     private fun setupListeners() {
@@ -80,34 +60,34 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Abrir chat 💬", Toast.LENGTH_SHORT).show()
         }
 
-        // Header → abre menú lateral
+        // Header
         btnNotificaciones.setOnClickListener {
-            Toast.makeText(this, "Abrir notificaciones 🔔", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Notificaciones 🔔", Toast.LENGTH_SHORT).show()
         }
 
-        // Menú lateral
-        menuInicio.setOnClickListener {
-            Toast.makeText(this, "Inicio", Toast.LENGTH_SHORT).show()
-            drawerLayout.closeDrawers()
+//        btnMenu.setOnClickListener {
+//            Toast.makeText(this, "Menú lateral", Toast.LENGTH_SHORT).show()
+//        }
+
+        // Sidebar
+        menuPerfil.setOnClickListener {
+            Toast.makeText(this, "Perfil", Toast.LENGTH_SHORT).show()
         }
 
         menuFotos.setOnClickListener {
             Toast.makeText(this, "Fotos", Toast.LENGTH_SHORT).show()
-            drawerLayout.closeDrawers()
         }
 
         menuVideos.setOnClickListener {
             Toast.makeText(this, "Videos", Toast.LENGTH_SHORT).show()
-            drawerLayout.closeDrawers()
         }
 
-        menuPerfil.setOnClickListener {
-            Toast.makeText(this, "Perfil", Toast.LENGTH_SHORT).show()
-            drawerLayout.closeDrawers()
+        menuWeb.setOnClickListener {
+            Toast.makeText(this, "Web", Toast.LENGTH_SHORT).show()
         }
 
-        btnMenu.setOnClickListener {
-            drawerLayout.openDrawer(GravityCompat.START)
-        }
+//        menuBotones.setOnClickListener {
+//            Toast.makeText(this, "Botones", Toast.LENGTH_SHORT).show()
+//        }
     }
 }

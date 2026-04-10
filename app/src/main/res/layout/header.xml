@@ -1,20 +1,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="53dp"
+    android:layout_height="60dp"
     android:orientation="horizontal"
     android:gravity="center_vertical"
     android:paddingHorizontal="16dp"
-    android:background="@color/background">
-
-    <!-- BOTÓN MENÚ ☰ -->
-    <ImageView
-        android:id="@+id/btnMenu"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:src="@drawable/ic_menu"
-        android:layout_marginEnd="12dp"
-        app:tint="@color/primary" />
+    android:background="@color/background"
+    android:elevation="2dp"
+    android:translationZ="2dp">
 
     <!-- TÍTULO -->
     <TextView
@@ -33,7 +25,6 @@
         android:id="@+id/btnNotificaciones"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:src="@drawable/ic_notification"
-        android:tint="@color/text_secondary"/>
+        android:src="@drawable/ic_notification"/>
 
 </LinearLayout>

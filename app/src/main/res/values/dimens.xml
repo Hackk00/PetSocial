@@ -1,5 +1,5 @@
 <resources>
-    <dimen name="padding">10dp</dimen>
+    <dimen name="padding">15dp</dimen>
     <dimen name="radius">16dp</dimen>
     <dimen name="radius_large">24dp</dimen>
     <dimen name="profile_size">90dp</dimen>
