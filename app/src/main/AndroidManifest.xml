@@ -9,6 +9,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PetSocial">
 
+        <activity android:name=".FotosActivity"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

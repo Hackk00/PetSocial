@@ -29,11 +29,13 @@
             android:background="?attr/selectableItemBackground">
 
             <ImageView
+                android:id="@+id/iconPerfil"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_perfil" />
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Perfil"
@@ -52,11 +54,13 @@
             android:background="?attr/selectableItemBackground">
 
             <ImageView
+                android:id="@+id/iconFotos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_fotos" />
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Fotos"
@@ -74,14 +78,16 @@
             android:background="?attr/selectableItemBackground">
 
             <ImageView
+                android:id="@+id/iconVideos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_videos" />
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Video"
+                android:text="Videos"
                 android:textSize="12sp"/>
         </LinearLayout>
 
@@ -96,11 +102,13 @@
             android:background="?attr/selectableItemBackground">
 
             <ImageView
+                android:id="@+id/iconWeb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_web" />
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Web"
@@ -118,11 +126,13 @@
             android:background="?attr/selectableItemBackground">
 
             <ImageView
+                android:id="@+id/iconBotones"
                 android:layout_width="26dp"
                 android:layout_height="26dp"
                 android:src="@drawable/ic_favorite" />
 
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Botones"
